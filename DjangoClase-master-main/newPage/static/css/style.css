@@ -1,0 +1,402 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.body{
+    background: #161816;
+}
+.fondo{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/464/040/large_2x/vector-dog-seamless-pattern-theme-bone-paw-foot-print-for-use-as-wallpaper-or-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.dogs{
+    padding-top: 70px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: black;
+    position: relative;   
+}
+
+.banner-perro{
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-top: 50px;
+    border-color: green;
+}
+
+
+.box{
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+
+.box h5{
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: sans-serif;
+
+}
+
+.space{
+    clear: both;
+    height: 20px;
+}
+.p1{
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+.quien{
+    image-resolution: 10px 10px;
+}
+.section-padding {
+    padding: 70px 0;
+}
+ .carousel-item{
+    height: 80vh;
+    min-width: 300px; 
+}
+.carousel-caption{
+    bottom: 200px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+
+}
+.carousel-inner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 30, 82, 0.327);
+    z-index: 1;
+
+}
+
+.navbar-nav{
+    font-size: 15px;
+    text-transform: initial;
+    font-weight: 500;
+}
+
+.narbar-dark .navbar-brand{
+    color: #ffff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+    color: #000;
+}
+
+.w-100{
+    height: 100vh;
+}
+
+.navbar.toggler{
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+.services .card-body{
+    font-size: 50px;
+}
+
+.team .card-body{
+    font-size: 20px;
+}
+
+
+@media(max-width: 767px){
+    .navbar-nav {
+        text-align: center;
+    }
+    .carousel-item{
+        height: 70vh;
+    }
+    .w-100{
+        height: 70vh;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.5;
+        font-size: 12px;
+    }
+    .about-text{
+        padding-top: 50px;
+    }
+    .card {
+        margin-bottom: 30px;
+    }
+    .section-padding{
+        padding: 50px 0;
+    }
+
+.Continue{
+    color: red;
+}
+}
+
+.items .product{
+    padding: 20px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.product img{
+    width: 25%;
+    margin: 0 20px;
+}
+
+.product .details{
+    height: 100%;
+    margin: 0 20px;
+    width: 60%;
+    color: black;
+    float: right;
+    padding-right: 10px;
+
+}
+
+.details h2{
+    font-size: 36px;
+    padding: 10px 0;
+    border-bottom: 1px solid gray;
+    float: left;
+    padding-right: 10px;
+
+}
+
+.details p{
+    font-size: 20px;
+    color: #555;
+    padding: 10px 0;
+    float: right;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.details .size h3{
+    font-size: 22px;
+    margin-top: 50px ;
+}
+
+.details .cantidad {
+    margin: 10px 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.cantidad h4{
+    margin-right: 30px;
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+
+.cantidad h4 input{
+    width: 60px;
+    height: 45px;
+    font-size: 22px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.details .cantidad button{
+    background-color: red;
+    color: white;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 20px;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 50px ;
+
+}
+
+.product .precio{
+    height: 100%;
+    margin: 0 20px;
+    width: 20%;
+    text-align: right;
+}
+
+.precio p{
+    font-size: 36px;
+    padding: 10px 0;
+    padding-bottom: 50px;
+    color: black;
+
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-top: 1px solid gray;
+    font-size: 24px;
+}
+
+.portada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.portada .img{
+    margin: 30px;
+    width: 30%;
+}
+
+.portada .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portada .info{
+    width: 25%;
+    margin: 30px;
+    height: 64%;
+    color: blac;
+}
+
+.info h2,p,.talla,.qty,.carrito,.comprar{
+    padding: 15px 10px;
+}
+
+.talla{
+    width: 100%;
+}
+
+.talla .select{
+    display: flex;
+    height: 55px;
+    border: 1px solid #444;
+    padding: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.talla .lista-opciones{
+    position: relative;
+    padding: 20px;
+    margin-top: 2px;
+    background-color: white;
+    border: 1px solid #444;
+    display: none;
+}
+
+.talla.click .lista-opciones{
+    display: block;
+}
+
+.lista-opciones .opciones{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.lista-opciones .opciones:hover{
+    background: #ebebeb;
+}
+
+.qty input{
+    padding: 20px;
+    width: 100px;
+    outline: none;
+    font-size: 22px;
+}
+
+.carrito{
+    display: flex;
+    align-items: center;
+
+}
+
+.carrito button{
+    width: 400px;
+    height: 55px;
+    cursor: pointer;
+    background: skyblue;
+    color: white;
+    font-size: 20px;
+}
+
+.carrito i{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 55px;
+    font-size: 30px;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.comprar button{
+    height: 55px;
+    width: 100%;
+    font-size: 20px;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+.redes-titulo{
+    margin: auto;
+    padding-left: 12px;
+    margin-top: 10px;
+}
+
+.tallas-perro {
+    margin: 2px;
+    margin-bottom: 20px;
+}
+
+.tallas-perro table{
+    background-color: lightgray;
+}
+
+.tallas-perro p{
+    text-align: justify;
+}

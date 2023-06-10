@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        {% comment %} <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css"> {% endcomment %}
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript%}
+        {%load static%}
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+
+    </head>
+
+<body class="body" >
+    
+    <!-- BARRA INICIO -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+            <div class="container">
+                <a href="#" class="navbar-brand"><span class="text-primary">Cachu</span>Pin</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                    aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarS">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href= {%url 'login'%} class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href={%url 'main'%} class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href={%url 'catalogo'%} class="nav-link">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href={%url 'perros'%} class="nav-link">Perros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href={%url 'gatos'%} class="nav-link">Gatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href={%url 'tallas'%} class="nav-link">Tallas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href={%url 'suscripciones'%} class="nav-link">Suscripciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href={%url 'nosotros'%} class="nav-link">Nosotros</a>
+                        </li>
+                        
+                    </ul>
+                    <div>
+                        <a href={%url 'carrito'%} class="text-decoration-none" >
+                            <i class="bi bi-cart"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    <!-- IMAGENES EN CARRUSEL -->
+        <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselE" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselE" data-bs-slide-to="1" aria-current="active"
+                    aria-label="Slide 2"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src={%static 'img/imagen-perro.jpg'%} class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h5 > Tienda</h5>
+                        <p class="p1">
+                            Tienda dedicada a la venta de articulos <br> para nuestras mascotas
+                        </p>
+                        <a href="#" class="btn btn-outline-primary btn-muted btn-sm">Mas Informacion</a>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src={%static 'img/img-gato.jpg'%} class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h5> Tienda</h5>
+                        <p class="p1">
+                            Tienda dedicada a la venta de articulos <br> para nuestras mascotas
+                        </p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mas Informacion</a>
+                    </div>
+                </div>
+            
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselE" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"> Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselE" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"> Next</span>
+            </button>
+
+        </div>
+    <!-- IMAGEN CON TEXTO POR DEBAJO -->
+        <section class="about section-padding">
+            <div class="container">
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text text-white">
+                        <h2>Tallas - Mascotas </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, repellendus officiis! Ex
+                            dicta illum eaque dolores libero obcaecati
+                            architecto eos quisquam totam quidem pariatur dolorum eius quibusdam, soluta nesciunt aut.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg4 col-md-12 col-12">
+                        <div class="about-img ">
+                            <img src={%static 'img/GUIA-DE-TALLAS-1.png'%} class="img-fluid mx-auto d-block" alt="">
+                            <br>
+                            <a href="tallas.html" class="btn btn-primary btn-sm d-grid gap-2 col-1 mx-auto" >Mas Info</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    <!-- TEXTO CON CUADROS REDIRECTORIOS -->
+        <section class="services section-padding">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="section-header text-center text-white pb-5">
+                            <h2>Articulos </h2>
+                            <p>
+                                Directorio de Articulos     
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-white text-center bg-dark pb-2">
+                            <div class="card-body">
+                                <i class="bi bi-tag"></i>
+                                <h3 class="card-title">Perros</h3>
+                                <img src={%static 'img/imagen-perro.jpg'%} class="img-fluid " alt="">
+                                <p class="lead">
+                                    Articulos para tu canino
+                                </p>
+                                <a href="perro.html">
+                                    <button class="btn bg-primary text-white">Pulsa aqui</button>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-white text-center bg-dark pb-2">
+                            <div class="card-body">
+                                <i class="bi bi-book-half"></i>
+                                <h3 class="card-title">Catalogo</h3>
+                                <img src="https://img.freepik.com/fotos-premium/perro-usando-computadora-teclado-ordenador-portatil-gafas-nerd_67473-1841.jpg" class="img-fluid col-6" alt="" style="width: 100%;">
+                                <p class="lead">
+                                    Articulos para tus mascotas
+                                </p>
+                                <a href="catálogo.html">
+                                    <button class="btn bg-primary text-white">Ver catalogo</button>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-white text-center bg-dark pb-2">
+                            <div class="card-body">
+                                <i class="bi bi-tag"></i>
+                                <h3 class="card-title">Gatos</h3>
+                                <img src="{% static 'img/img-gato.jpg' %}" class="img-fluid" alt="">
+                                <p class="lead">
+                                    Articulos para tu minino
+                                </p>
+                                <a href="gato.html">
+                                    <button class="btn bg-primary text-white">Pulsa aqui</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrito de compras lateral *OPCIONAL*
+            <div class="wrapper">
+                <div class="sidecart">
+                    <h2>Cart</h2>
+                    <div class="products">
+                        <img src="" alt="producto">
+                    </div>
+                </div>
+                <div class="cartbtn">
+                    <div>
+                        <a href="carrito.html" class="text-decoration-none" >
+                            <i class="bi bi-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        -->
+
+        
+
+                <!-- DERECHOS Y REDES -->
+                <footer class="bg-dark p-2 text-left ">
+                    <div class="container">
+
+                    <!--Redes sociales-->                 
+                        <div class="redes-titulo">
+                            <h3 class="text-white" ><b>Siguenos</b></h3>
+                        </div>
+                        
+                        <!--Facebook-->
+                        <a  class="btn text-white m-1" 
+                            href="#" role="button" 
+                            data-mdb-ripple-color="dark">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <!--Instagram-->
+                        <a  class="btn text-white m-1" 
+                            href="#" role="button" 
+                            data-mdb-ripple-color="dark">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+
+                        <!--Twitter-->
+                        <a  class="btn text-white m-1" 
+                            href="#" role="button" 
+                            data-mdb-ripple-color="dark">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        
+                        <!--LinkedIn-->
+                        <a  class="btn text-white m-1" 
+                            href="#" role="button" 
+                            data-mdb-ripple-color="dark">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <!--Github-->
+                        <a  class="btn text-white m-1" 
+                            href="#" role="button" 
+                            data-mdb-ripple-color="dark">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                    </div>
+
+                </footer>
+
+                        <!--Derechos-->
+                        <footer class="text-center" style="background-color: gray;">
+                            <div>
+                                <p class="text-white"> ©Cachupin - Todos los derechos reservados </p>
+                            </div>
+                        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            crossorigin="anonymous"></script>
+
+</html>
